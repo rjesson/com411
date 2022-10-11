@@ -1,9 +1,16 @@
 # display head and body of beep
-print("##########")
-print("#        #")
-print("#  O  O  #")
-
-
+print("     ##########     ")
+print("     #  O  O  #     ")
+print("     #        #     ")
+print("     #  ----  #     ")
+print("     ##########     ")
+print("####################")
+print("#                  #")
+print("#                  #")
+print("#                  #")
+print("#                  #")
+print("#                  #")
+print("####################")
 
 
 
