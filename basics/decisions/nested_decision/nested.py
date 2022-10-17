@@ -16,6 +16,7 @@ if cover_type == "soft":
     else:
         print("Soft covers with coils or stitches are great for short books.")
 
+# What does beep respond if hard cover
 else:
     print("Books with hard covers can be more expensive!")
 
