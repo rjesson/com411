@@ -1,4 +1,4 @@
-# Define function with one paramter
+# Define function with one parameter
 def escape_by(plan):
     # Determine which message to display
     if plan == "jumping over":
