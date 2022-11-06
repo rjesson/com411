@@ -1,21 +1,34 @@
 # Import csv module
 import csv
 
-# create variable assigned to the file we want
-file_path = "bots.csv"
-
-# create program to read the file
-with open(file_path) as csv_file:
-    # read the variable I ve just opened above
-    csv_reader = csv.reader(csv_file)
+# define function to read the file
+def read_file (file_path):
+    with open(file_path) as csv_file:
+        # read the variable I ve just opened above
+        csv_reader = csv.reader(csv_file)
 
     # create variable to assign the headings
-    headings = next(csv_reader)
-    print(f"Headings: \n{headings}\n")
-    print("Values:")
+        headings = next(csv_reader)
+        print(f"Headings: \n{headings}\n")
+        print("Values:")
     # for loop to go through each row of reader and print out
-    for row in csv_reader:
-        print(row)
+        for row in csv_reader:
+            print(row)
+
+# Create run function
+def run():
+    read_file("bots.csv")
+
+# call the function
+if __name__ == "__main__":
+    run()
+
+
+
+
+
+
+
 
 
 
