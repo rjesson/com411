@@ -12,8 +12,8 @@ def read_file (file_path):
         print(f"Headings: \n{headings}\n")
         print("Values:")
     # for loop to go through each row of reader and print out
-        for row in csv_reader:
-            print(row)
+        for values in csv_reader:
+            print(values)
 
 # Create run function
 def run():
