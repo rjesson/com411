@@ -10,11 +10,18 @@ def read (file_path):
         return data
 
 # Define function to save our read data
-def save (file_path, saved_data):
-    print("Exporting...")
+def save (file_path, data):
+    print("Exporting...",end="")
     with open(file_path,"w") as json_file:
-        json.dump(data, file_path, indent=4)
+        json.dump(data, json_file, indent=4)
     print("Done!")
+
+def run():
+    json_data = read("robocity.json")
+    save("exported.json", json_data)
+
+if __name__=="__main__":
+    run()
 
 
 
