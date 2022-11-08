@@ -4,10 +4,11 @@ import csv
 def extract (file_path):
     print("Extracting....", end="")
     with open(file_path) as csv_file:
+        # csv_reader is variable to store and csv.reader translates the csv_file
         csv_reader = csv.reader(csv_file)
         # read in the headings
         headings = next(csv_reader)
-        # create variable to read in names of each robot
+        # create an empty variable to read in names of each robot
         names = ""
         # loop to extract each of the robot names
         for values in csv_reader:
