@@ -5,8 +5,8 @@ def likelihoods():
     return min(likelihoods)
 
 def run():
-    min_likelihood = likelihoods()
-    print(f"Minimum likelihood of falling is: {min_likelihood}%")
+    # Have to call the likelihood function within this display function
+    print(f"Minimum likelihood of falling is: {likelihoods()}%")
 
 if __name__ == "__main__":
     run()
