@@ -20,7 +20,7 @@ def run():
     for observation in observations:
         # Creating a tuple the first element "observation" has the value the second has the count of times it appears on the list
         data = observation, observations.count(observation)
-        # Once you have the tuple you add it to eh set
+        # Once you have the tuple you add it to the set
         observations_set.add(data)
     # For own reference just printing out the set
     print(f"{observations_set}")
