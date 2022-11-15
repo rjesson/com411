@@ -11,7 +11,7 @@ def observed():
     return observations
 
 # Define function to ask user if they would like to remove any values from the list of observations returned above
-# function to take one parameter which represents the list of observations
+# function to take one parameter which represents the list of observations.  Call this function and pass this value
 def remove_observations(observations):
     # Ask the user IF they which to remove any observations
     # but as they may answer yes more times I need to create an infinite while loop to keep asking until they respond with anything other than yes
