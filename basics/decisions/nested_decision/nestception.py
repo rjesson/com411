@@ -8,7 +8,7 @@ where = input()
 if where == "bedroom":
     # Determine where in the bedroom to look
     print("Where in the bedroom should I look?")
-    where_bedroom = input ()
+    where_bedroom = input()
 
     # Determine which response to provide
     if where_bedroom == "under the bed":
